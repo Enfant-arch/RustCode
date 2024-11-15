@@ -9,6 +9,7 @@ import { store } from './store/store';
 import { queryClient } from './queryClient';
 import theme from './theme';
 import i18n from './i18n';
+import HelloWorld from './pages/helloWorld';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -23,15 +24,7 @@ function App() {
                 <Routes>
                   <Route
                     path="/"
-                    element={
-                      <div>
-                        <h1>{i18n.t('greeting')}</h1>
-                        <button onClick={() => store.dispatch({ type: 'counter/increment' })}>
-                          Increment
-                        </button>
-                        <p>Count: {store.getState().counter.count}</p>
-                      </div>
-                    }
+                    element={<HelloWorld/>}
                   />
                 </Routes>
               </Router>

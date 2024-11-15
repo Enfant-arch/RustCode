@@ -1,6 +1,6 @@
 // src/store.js
 import { configureStore } from '@reduxjs/toolkit';
-import {counterReducer} from './reducers/incrementReducer';
+import { counterReducer } from './reducers/incrementReducer';
 
 
 

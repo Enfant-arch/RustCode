@@ -1,5 +1,5 @@
 // src/components/ErrorBoundary.jsx
-import React, { Component } from 'react';
+import  { Component } from 'react';
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -20,6 +20,7 @@ class ErrorBoundary extends Component {
       console.log(this.state);
       return <h1>Что-то пошло не так!</h1>;
     }
+    // eslint-disable-next-line react/prop-types
     return this.props.children;
   }
 }

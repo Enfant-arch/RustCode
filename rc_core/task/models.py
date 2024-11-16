@@ -14,7 +14,7 @@ class Task(models.Model):
     solved_count = models.IntegerField(default=0, editable=True, auto_created=0)
     unit_test_code = models.TextField()
     
-     
+    
 
 
     #TODO : also about main part of model should be ramedaed ID, Make categories, description image 

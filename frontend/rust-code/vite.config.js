@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server:{
     proxy:{
-      '/api' : 'https://localhost:8000'
+      '/autharization' : 'http://localhost:8000'
      }
   }
 })

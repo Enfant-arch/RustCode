@@ -1,6 +1,3 @@
-// src/App.jsx
-import React from 'react';
-
 import { Provider as ReduxProvider } from 'react-redux';
 import { QueryClientProvider } from 'react-query';
 import { ThemeProvider } from '@mui/material/styles';
@@ -12,6 +9,7 @@ import i18n from './i18n';
 import HelloWorld from './pages/helloWorld';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginComponent from './pages/admin/autharization';
 
 function App() {
   return (
@@ -26,6 +24,8 @@ function App() {
                     path="/"
                     element={<HelloWorld/>}
                   />
+                  <Route path='/admin'
+                  element={<LoginComponent/>}/>
                 </Routes>
               </Router>
             </I18nextProvider>

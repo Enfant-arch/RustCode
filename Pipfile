@@ -11,6 +11,7 @@ django-cors-headers = "*"
 psycopg2 = "*"
 django-environ = "*"
 pillow = "*"
+rest-framework-simplejwt = "*"
 
 [dev-packages]
 

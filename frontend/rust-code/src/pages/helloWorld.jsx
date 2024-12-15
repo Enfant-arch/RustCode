@@ -18,7 +18,7 @@ console.log(count)
   if (error) return <div>Error fetching data</div>;
   if(data) return (
     <div>
-      <h1>Постики</h1>
+      <h1 className='text-gray-300'>Постики</h1>
       <p>Количество выводимых постов{count}</p>
       <button onClick={() => dispatch({ type: 'counter/increment' })}>Еще</button>
       <h2>Посты:</h2>
